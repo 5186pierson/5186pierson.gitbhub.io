@@ -11,7 +11,11 @@
 
 Every human being can handle a certain amount of lucassing before they have a mental breakdown. This is called the Lucas-tax. The amount of lucassing one can handle varies per person. If you have no or a few companions, chances are you have a higher Lucas-tax. </p>
 
-<p> Here is some photographic footage to help you comprehend. 
+<p> Here is some photographic footage to help you comprehend. </p>
+<video src="https://5186pierson.github.io/WhatsApp%20Video%202019-11-04%20at%209.16.41%20PM.mp4" width="200" heigth="auto" style="position: relative; top: 200px; left: 150px" controls />
     
+  <video width="320" height="240" controls>
+   <source src="https://5186pierson.github.io/WhatsApp%20Video%202019-11-04%20at%209.16.41%20PM.mp4" type="video/mp4">
+</video>
 </body>
 </html>
