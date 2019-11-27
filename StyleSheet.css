@@ -1,0 +1,144 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, ul, li, input, label, textarea {
+  display: block;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/*
+  * position fixed: vast op je scherm
+  * z-index laag hoogte
+*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(113,128,147);
+  z-index: 999999;
+}
+
+/* 
+  * transform translate x: zet focus punt in het midden
+*/
+header h1{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/*
+  * float is kut maar zet dingen naast elkaar
+  * list style type: het puntje voor die list items weghalen
+*/
+header li{
+  margin-top: 50px;
+  width: calc(100% / 5);
+  height: 50px;
+  float: left;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* Hover over die list item */
+header li:hover{
+  animation: itemkleur 1s forwards;
+  -moz-animation: itemkleur 1s forwards;
+  -webkit-animation: itemkleur 1s forwards;
+}
+
+@keyframes rainbow { 
+  100%,0%{
+    color: rgb(255,0,0);
+  }
+  8%{
+    color: rgb(255,127,0);
+  }
+  16%{
+    color: rgb(255,255,0);
+  }
+  25%{
+    color: rgb(127,255,0);
+  }
+  33%{
+    color: rgb(0,255,0);
+  }
+  41%{
+    color: rgb(0,255,127);
+  }
+  50%{
+    color: rgb(0,255,255);
+  }
+  58%{
+    color: rgb(0,127,255);
+  }
+  66%{
+    color: rgb(0,0,255);
+  }
+  75%{
+    color: rgb(127,0,255);
+  }
+  83%{
+    color: rgb(255,0,255);
+  }
+  91%{
+    color: rgb(255,0,127);
+  }
+}
+
+@keyframes rainbow-bg { 
+  100%,0%{
+    background-color: rgb(255,0,0);
+  }
+  8%{
+    background-color: rgb(255,127,0);
+  }
+  16%{
+    background-color: rgb(255,255,0);
+  }
+  25%{
+    background-color: rgb(127,255,0);
+  }
+  33%{
+    background-color: rgb(0,255,0);
+  }
+  41%{
+    background-color: rgb(0,255,127);
+  }
+  50%{
+    background-color: rgb(0,255,255);
+  }
+  58%{
+    background-color: rgb(0,127,255);
+  }
+  66%{
+    background-color: rgb(0,0,255);
+  }
+  75%{
+    background-color: rgb(127,0,255);
+  }
+  83%{
+    background-color: rgb(255,0,255);
+  }
+  91%{
+    background-color: rgb(255,0,127);
+  }
+}
+
+@keyframes itemkleur {
+  from{
+      background-color: rgb(113,128,147);
+  }
+  to{
+      background-color: rgba(0,0,0,0.2);
+  }
+}
