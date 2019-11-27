@@ -29,10 +29,10 @@ header {
   * transform translate x: zet focus punt in het midden
 */
 header h1{
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  top: 0px;
+  left: 40%;
+  transform: translateX(-40%);
 }
 
 
