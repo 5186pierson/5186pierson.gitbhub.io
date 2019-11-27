@@ -95,6 +95,10 @@ header li:hover{
   }
 }
 
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+}
 .keyframes rainbow-bg { 
   100%,0%{
     background-color: rgb(255,0,0);
